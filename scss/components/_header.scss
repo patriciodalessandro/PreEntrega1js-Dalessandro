@@ -1,0 +1,50 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  
+    .navbar {
+      &-brand {
+        .logo {
+          height: 100px;
+          width: 100px;
+        }
+      }
+  
+      &-nav {
+        @include flex(flex, flex-start, center, column);
+        
+  
+        .nav-item {
+          margin: 10px;
+        }
+  
+        .nav-link {
+          font-size: 16px;
+          color: $color-contraste;
+  
+          &:hover {
+            color: #a56565;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+          }
+        }
+      }
+  
+      &-collapse {
+        @include flex(flex, space-between, center, row);
+       
+  
+        .shopping-cart {
+          margin-left: auto;
+  
+          .bi-cart {
+            font-size: 30px;
+            color: $color-contraste;
+            margin: 10px 15px 10px 10px;
+          }
+        }
+      }
+    }
+  }

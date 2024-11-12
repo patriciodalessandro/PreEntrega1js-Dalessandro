@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------- GENERAL RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- BODY -------- */
+body {
+  font-family: $font-primary;
+}
+
+
+// PRODUCT SECTION
+
+.product-section {
+    padding: 20px;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: $color-titulos;
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+      margin-bottom: 40px;
+  
+      .product-item {
+        text-align: center;
+        padding: 10px;
+        background-color: $color-producto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+  
+        .product-description {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 8px;
+        }
+  
+        .product-price {
+          font-size: 18px;
+          color: $color-precios;
+          font-weight: bold;
+          margin-bottom: 12px;
+          
+          .original-price {
+            font-size: 16px;
+            color: #999; // Color gris para el precio original
+            text-decoration: line-through;
+            margin-right: 10px; 
+          }
+        
+          .sale-price {
+            font-size: 18px;
+            color: $color-precios;
+            font-weight: bold;
+          }
+          
+        }
+        
+
+  
+        .btn-add-to-cart {
+          padding: 10px 20px;
+          background-color: $color-boton;
+          color: $color-contraste;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: $color-boton-hover;
+          }
+        }
+      }
+    }
+  }
+  
+

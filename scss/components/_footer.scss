@@ -1,0 +1,44 @@
+footer {
+  background: $color-background-footer;
+  color: $color-contraste;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  .footer-content {
+    @include flex(flex, center, center, row);
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    a {
+      @extend %enlaces;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .footer-social {
+      @extend %enlaces;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  p {
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px $color-contraste solid;
+  }
+}

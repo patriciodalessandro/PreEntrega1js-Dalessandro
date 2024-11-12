@@ -1,0 +1,49 @@
+/* -------- PAGINA INFO ENVIO -------- */
+.envios-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-background;
+    color: $color-titulos;
+  
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    h3 {
+      font-size: 24px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+  
+      + p {
+        margin-top: 5px;
+      }
+    }
+  
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: justify;
+  
+      + p {
+        margin-top: -10px;
+      }
+    }
+  
+    strong {
+      font-weight: bold;
+    }
+  
+    .ultimo-parrafo {
+      margin-bottom: 40px;
+    }
+  }
+  

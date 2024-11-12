@@ -1,0 +1,22 @@
+/* -------- NOSOTROS SECTION -------- */
+.nosotros-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: $color-background;
+    text-align: justify;
+    border-radius: 8px;
+    color: $color-titulos;
+  
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  }
+  

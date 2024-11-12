@@ -1,0 +1,25 @@
+// Variables fontfamily y colores
+$font-primary: "Montserrat", sans-serif;
+$color-titulos: #333;
+$color-boton: #ff6347;
+$color-boton-hover: #e5533d;
+$color-precios: #bd184f;
+$color-producto: #f7f7f7;
+$color-info: #555;
+$color-background: #f4f4f4;
+$color-background-footer: #333;
+$color-contraste: #fff;
+
+// Mixin flexbox
+@mixin flex($display, $justify, $align, $direction) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+/* extend enlaces*/
+%enlaces {
+    text-decoration: none;
+    color: $color-contraste;
+  }

@@ -1,0 +1,39 @@
+/* --------  PAGINA DE UBICACION -------- */
+.ubicacion-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: $color-background;
+    text-align: center;
+    border-radius: 8px;
+    color: $color-titulos;
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: $color-titulos;      
+      
+  
+      &:hover {
+        text-decoration: underline;
+        color: $color-boton-hover;
+      }
+    }
+  
+    div {
+      iframe {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        height: 300px;
+        border: 0;
+        border-radius: 8px;
+      }
+    }
+  }
+  

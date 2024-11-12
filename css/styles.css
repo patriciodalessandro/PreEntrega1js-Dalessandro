@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------- GENERAL RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- BODY --------*/ 
+body {
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/* -------- HEADER -------- */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-brand .logo {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 10px;
+} 
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #fff; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a56565; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+}
+
+.shopping-cart .bi-cart {
+    font-size: 30px; 
+    color: #fff; 
+    margin: 10px 15px 10px 10px;
+}
+
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-collapse .shopping-cart {
+    margin-left: auto; 
+}
+
+
+
+/* -------- HERO SECTION -------- */
+
+.hero {
+    position: relative;
+  }
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 60%;
+    z-index: 10;
+  }
+.hero .hero-text a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+.hero .hero-text a h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+.hero .hero-text p {
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+
+.hero .carousel .carousel-inner .carousel-item img{
+    height: 600px;
+    object-fit: cover; 
+}
+
+
+.hero .carousel .carousel-inner .carousel-item .carousel-caption h5{
+   
+    font-weight: 800;
+}
+.hero .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-weight: 600;
+}
+
+
+/* -------- PRODUCT SECTION -------- */
+
+
+.product-section {
+    padding: 20px;
+}
+
+.product-section  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.product-section .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.product-section .product-grid .product-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.product-section .product-grid .product-item img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-section .product-grid .product-item .product-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.product-section .product-grid .product-item .product-price {
+    font-size: 18px;
+    color: #bd184f;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-section .product-grid .product-item .btn-add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-section .product-grid .product-item .btn-add-to-cart:hover {
+    background-color: #e5533d;
+}
+
+
+/* -------- INFO SECTION -------- */
+
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #b5a9a9b7;
+    width: 100%;
+  }
+  
+  .info-item {
+    text-align: left;
+    
+  }
+  
+  .info-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .info-item a {
+    font-size: 14px;
+    color: #555;
+    
+  }
+  
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+ 
+
+
+/* -------- NEWSLETTER SECTION -------- */
+
+.newsletter {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.newsletter p {
+    font-size: 18px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter form input {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.newsletter form button {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.newsletter form button:hover {
+    background: #e5533d;
+}
+
+
+
+
+/* -------- WHATSAPP ICON -------- */
+.whatsapp a img {
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  background: #333;
+  color: #fff;   
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-link,
+.footer-social {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link:hover,
+.footer-social:hover {
+  text-decoration: underline;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+footer p {
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px #fff solid;
+}
+
+
+/* -------- PÁGINA DE NOSOTROS --------*/
+
+.nosotros-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: justify;
+    border-radius: 8px;
+  }
+  
+  .nosotros-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .nosotros-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+
+/* -------- PAGINA DE CONTACTO -------- */
+
+.contacto-section {
+    width: 100%;
+    padding: 50px;
+    background-color: #f9f9f9; 
+  }
+  
+.contacto-section .contacto-form-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+.contacto-section div h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+.contacto-section .contacto-form-container .contacto-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+.contacto-section .contacto-form-container .contacto-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; 
+  }
+  
+.contacto-section .contacto-form-container .contacto-form .form-group label {
+    margin-bottom: 5px; 
+    font-weight: bold;
+  }
+  
+.contacto-section .contacto-form-container .contacto-form  .form-group input,
+.contacto-section .contacto-form-container .contacto-form .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.contacto-section .contacto-form-container .contacto-form .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    width: 100%; 
+  }
+  
+  .contacto-section .contacto-form-container .contacto-form .form-group button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #ff6347; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .contacto-section .contacto-form-container .contacto-form .form-group button:hover {
+    background-color: #e5533d; 
+    
+  }
+
+
+/* --------  PAGINA DE UBICACION -------- */
+
+.ubicacion-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .ubicacion-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .ubicacion-section a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .ubicacion-section a:hover {
+    text-decoration: underline;
+    color: #e5533d;
+  }
+  
+  .ubicacion-section div iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+  }
+
+/* -------- PAGINA INFO ENVIO -------- */
+
+.envios-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .envios-page h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .envios-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .envios-page h3 {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .envios-page p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .envios-page strong {
+    font-weight: bold;
+  }
+  
+  .envios-page h3 + p {
+    margin-top: 5px;
+  }
+  
+  .envios-page p + p {
+    margin-top: -10px;
+  }
+  .envios-page .ultimo-parrafo {
+    margin-bottom: 40px;
+  }
+
+/* ------- PAGINA INFO CUOTAS ------ */
+
+.cuotas-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #000;
+  border-radius: 8px;
+}
+
+.cuotas-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cuotas-page h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cuotas-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cuotas-page strong {
+  font-weight: bold;
+}
+
+/* ------ PÁGINA INFO CAMBIO -------- */
+
+.cambios-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #000;
+  border-radius: 8px;
+}
+
+.cambios-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cambios-page h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cambios-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cambios-page span {
+  font-weight: bold;
+}
+
+.cambios-page strong {
+  font-weight: bold;
+}
+
+/* --------- RESPONSIVE DESING - MEDIA QUERIES --------- */
+
+@media screen and (max-width: 810px){    
+  /* hero section */
+
+  .hero .hero-text {
+    max-width: 80%; 
+    padding: 15px; 
+  }
+  .hero .hero-text a h1 {
+    font-size: 28px;
+  } 
+  .hero .hero-text a p {
+    font-size: 14px; 
+  }
+  
+  .hero .carousel .carousel-inner .carousel-item img {
+    height: 500px; 
+  }
+
+  /* productos */
+  .product-section h2 {
+    font-size: 24px;
+  }
+
+  .product-section .product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;          
+  }
+
+  /* info */
+  .info-section .info-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;    
+  }
+  
+          
+  .info-section  .info-item p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+    
+  .info-section .info-item a {
+    font-size: 12px;
+    color: #555;
+      
+  }
+  /* newsletter */
+  .newsletter h2 {
+    font-size: 18px;
+  }
+  .newsletter p {
+    font-size: 16px;
+  }
+  
+  .newsletter form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+          
+  .newsletter form button { 
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}        
+
+
+
+@media screen and (max-width: 481px) {
+  header .navbar .container-fluid .navbar-brand img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .hero .hero-text {
+    max-width: 90%; 
+    padding: 10px; 
+  }
+  .hero .hero-text a h1 {
+    font-size: 24px; 
+  }
+
+  .hero .hero-text a p {
+    font-size: 12px; 
+  }
+  
+  .hero .carousel .carousel-inner .carousel-item a img {
+    height: 400px; 
+  } 
+  
+  .product-section{
+    justify-content: space-around;
+  }
+    
+  .product-section h2 {
+    font-size: 18px; 
+    padding: 10px;
+    margin-top: 50px;
+  }
+    
+  .product-section .product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr;
+  }
+
+  .product-section .product-grid .product-item {
+    text-align: center;
+    width: 300px;
+    padding: 5px;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+    
+  .product-section .product-grid .product-item img {
+    width: 200px;
+    height: 320px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+    
+  .product-section .product-grid .product-item .product-description {
+    font-size: 14px;
+  }
+  
+  .productos-elegidos .productos-grid .product-item .product-price {
+    font-size: 16px;
+      
+  }
+  
+  .product-section .product-grid .product-item .btn-add-to-cart {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* -------- INFO SECTION -------- */
+
+  .info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+  }
+  
+  .info-item {
+    text-align: left;
+    margin: 10px;
+  }
+  
+
+  /* -------- FOOTER -------- */
+
+  footer {
+    font-size: 12px;
+  }
+
+  footer div a span {
+    display: none;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+  
+  /* ------ PAGINA NOSOTROS ----- */
+
+  .nosotros-section {
+    padding: 20px;
+  }
+  
+  .nosotros-section h1 {
+    font-size: 28px;
+  }
+  
+  .nosotros-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* --------  PAGINA DE UBICACION -------- */
+
+  .ubicacion-section {
+    padding: 20px;
+  }
+  
+  .ubicacion-section h1 {
+    font-size: 28px;
+  }
+  
+  .ubicacion-section a {
+    font-size: 16px;
+  }
+  
+  .ubicacion-section div iframe {
+    height: 200px;
+  }
+
+  /* ----- PAGINA DE ENVIOS ------- */
+
+  .envios-page {
+    padding: 10px;
+  }
+  
+  .envios-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .envios-page h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .envios-page h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .envios-page p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* ------- PAGINA DE FORMAS DE PAGO ------ */
+  .cuotas-page {
+    padding: 20px;
+  }
+  
+  .cuotas-page h1 {
+    font-size: 28px;
+  }
+  
+  .cuotas-page h2 {
+    font-size: 24px;
+  }
+  
+  .cuotas-page p {
+    font-size: 16px;
+  }
+
+  /* ------ PÁGINA DE CAMBIOS -------- */
+  .cambios-page {
+    padding: 20px;
+  }
+
+  .cambios-page h1 {
+    font-size: 28px;
+  }
+
+  .cambios-page h2 {
+    font-size: 24px;
+  }
+
+  .cambios-page p {
+    font-size: 16px;
+  }
+}
+    
+
