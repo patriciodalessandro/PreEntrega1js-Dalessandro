@@ -1,10 +1,21 @@
-// 1. Declaración de la clase ProductoCarrito
+// 1. Función para validar el login
+function validarLogin(userIngresado, passIngresada, usuario, contrasena) {
+    return (userIngresado === usuario && passIngresada === contrasena);
+}
+
+// 2. Función para mostrar el menú de productos
+function mostrarMenu() {
+    const listaProductos = productos.map(producto => `${producto.codigo} : ${producto.nombre} $${producto.precio}`).join("\n");
+    return parseInt(prompt("Ingrese el código del producto que desea comprar. \n" + listaProductos));   
+}
+
+// 3. Declaración de la clase ProductoCarrito, son los objetos que agregaría al carrito que los saco de listaProductos como productoElegido
 class ProductoCarrito {
     constructor(nombre, precio) {
         this.nombre = nombre;
         this.cantidad = 1;
         this.precio = precio;
-        this.total = precio; // Total inicial es el precio por 1 unidad
+        this.total = precio; 
     }
 
     // Método para incrementar la cantidad y actualizar el total
@@ -14,16 +25,6 @@ class ProductoCarrito {
     }
 }
 
-// 2. Función para validar el login
-function validarLogin(userIngresado, passIngresada, usuario, contrasena) {
-    return (userIngresado === usuario && passIngresada === contrasena);
-}
-
-// 3. Función para mostrar el menú de productos
-function mostrarMenu() {
-    const listaProductos = productos.map(producto => `${producto.codigo} : ${producto.nombre} $${producto.precio}`).join("\n");
-    return parseInt(prompt("Ingrese el código del producto que desea comprar. \n" + listaProductos));   
-}
 
 // 4. Función para realizar la compra
 function realizarCompra() {
